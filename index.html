@@ -1,0 +1,34 @@
+<body>
+  <div id="bg"></div>
+  <div id="bearingCalc" class="form">
+    <label for="bearing">Input Bearing</label><br>
+    <input type="text" id="bearing" name="bearing" value="40-20-15-3"><br>
+    <label for="deflection">Deflection</label><br>
+    <input type="text" id="deflection" name="deflection" value="-125-33-01"><br>
+    <label for="output">New Bearing</label><br>
+    <input type="text" id="output" name="output" value="" readonly>
+  </div>
+  <div id="distanceCalc" class="form">
+    <label for="inDist">Distance In</label>
+    <input type="number" name="inDist" id="inDist" step="any"><br>
+    <label for="inUnits">From</label>
+    <select name="inUnits" id="inUnits">
+      <option value=66.00013>Chains</option>
+      <option value=0.6600013>Links</option>
+      <option value=16.50003>Rods</option>
+      <option value=3.28084>Meters</option>
+      <option value=1>Feet</option>
+    </select>
+    <label for="outUnits">To</label>
+    <select name="outUnits" id="outUnits" name="outUnits">
+      <option value=1>Feet</option>
+      <option value=66.00013>Chains</option>
+      <option value=0.6600013>Links</option>
+      <option value=0.060606060606061>Rods</option>
+      <option value=0.3048>Meters</option>
+    </select><br>
+    <label for="outDist">Distance Out</label>
+    <input type="text" readonly id="outDist" name="outDist">
+  </div>
+  <div id="messages"><span id="message">Error!</span></div>
+</body>
